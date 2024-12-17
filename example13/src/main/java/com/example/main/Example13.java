@@ -6,7 +6,6 @@ import com.example.config.ProjectConfig;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class Example13 {
-
     public static void main(String[] args) {
         var context = new AnnotationConfigApplicationContext(ProjectConfig.class);
         String[] persons = context.getBeanNamesForType(Person.class);
@@ -17,5 +16,6 @@ public class Example13 {
         vehicle.getVehicleServices().moveVehicle();*/
         person.getVehicle().getVehicleServices().playMusic();
         person.getVehicle().getVehicleServices().moveVehicle();
+
     }
 }
