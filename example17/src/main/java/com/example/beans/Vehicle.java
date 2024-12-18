@@ -29,7 +29,7 @@ public class Vehicle {
 
     public void printHello(){
         System.out.println(
-            "Printing Hello from Component Vehicle Bean");
+                "Printing Hello from Component Vehicle Bean");
     }
 
     @Override

@@ -8,16 +8,12 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
-@Scope(BeanDefinition.SCOPE_PROTOTYPE)
+@Scope(BeanDefinition.SCOPE_SINGLETON)
 public class VehicleServices {
 
     @Autowired
     private Speakers speakers;
     private Tyres tyres;
-
-    public VehicleServices(){
-        System.out.println("VehicleServices object is created");
-    }
 
     public void playMusic(){
         String music = speakers.makeSound();
